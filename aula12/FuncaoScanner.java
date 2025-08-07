@@ -1,12 +1,13 @@
+import java.util.Scanner;
+
 public class FuncaoScanner {
     public static void main(String[] args) {
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.print("Digite um número: ");
-        float numero = scanner.nextFloat();
+        float numero = scan.nextFloat();
         String numero1 = String.valueOf(numero);
-        numero1 = numero1.replace('.', '.');
-        System.out.println("Você digitou o número: " + numero1);
-        scanner.close();
+        numero1 = numero1.replace('.', ',');
+        System.out.println("Você digitou o número: " + numero1);        
     }
 }
 
