@@ -22,12 +22,12 @@ public class Exerc11 {
         if (salario > 1500) {
             System.out.println("Salário antes do reajuste: R$ " + salario);
             novoSalario = salario * 1.05;
-        }
-        novoSalario = salario;
-        System.out.println(salario);
-        System.out.println(novoSalario);
-        System.out.println("O percentual aplicado foi de: " + (salario / novoSalario) * 100 + "%");
+        }        
+       
+        double percentual = ((novoSalario / salario) - 1) * 100;
+        String formatPercentual = String.format("%.2f", percentual);
+        System.out.println("O reajuste aplicado foi de: " + formatPercentual + "%");
         System.out.println("Valor do aumento: R$ " + (novoSalario - salario));
-        System.out.printf("Seu novo salário é: R$ %.2f%n", salario);
+        System.out.printf("Seu novo salário é: R$ %.2f%n", novoSalario);
     }
 }
