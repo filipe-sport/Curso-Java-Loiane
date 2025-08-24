@@ -5,12 +5,12 @@ public class Exerc24 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Entre com o primeiro número:");
-        int num1 = scanner.nextInt();
+        double num1 = scanner.nextDouble();
         System.out.println("Entre com o segundo número:");
-        int num2 = scanner.nextInt();
+        double num2 = scanner.nextDouble();
         System.out.println("Entre com a operação (+, -, *, /): ");
         char operacao = scanner.next().charAt(0);
-        double resultado;
+        double resultado = 0;
         switch (operacao) {
             case '+':
                 resultado = num1 + num2;
@@ -35,26 +35,23 @@ public class Exerc24 {
             default:
                 System.out.println("Operação inválida.");
                 break;
-            
-            if (resultado % 2 == 0) {
+        }
+        if (resultado % 2 == 0) {
                     System.out.println("O resultado é par.");
                 } else {
                     System.out.println("O resultado é ímpar.");
                 }
-            if (resultado > 0) {
+        if (resultado > 0) {
                     System.out.println("O resultado é positivo.");
                 } else if (resultado < 0) {
                     System.out.println("O resultado é negativo.");
                 } else {
                     System.out.println("O resultado é zero.");
                 }
-            if (resultado % 1 == 0) {
+        if (resultado % 1 == 0) {
                     System.out.println("O resultado é um número inteiro.");
                 } else {
                     System.out.println("O resultado é um número decimal.");
                 }
-                
-        
-        }
     }
 }
