@@ -27,6 +27,6 @@ public class Exerc25 {
         } else if (media > 60){
             System.out.println("População Idosa!");
         }
-
+                    
     }
 }
