@@ -11,17 +11,20 @@ public class Exerc21 {
         }
         //Para numeros maiores que 2
         //Verifica se é divisivel por algum numero entre 2 e ele mesmo
+        boolean primo = true;
         for(int i = 2; i < num; i++){
             if(num % i == 0){
                 System.out.println("O numero " + num + " não é primo! ");
-                break;
-            }
-            else{
-                System.out.println("O numero " + num + " é primo! ");
+                primo = false;
                 break;
             }
             
-                   
         }
-    }
+        if (primo){
+            
+         System.out.println("O numero " + num + " é primo! ");
+        }      
+    }              
 }
+    
+
