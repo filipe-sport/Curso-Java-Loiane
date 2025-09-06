@@ -9,9 +9,15 @@ public class Exerc36 {
         int initTab = scan.nextInt();
         System.out.println("Terminar em: ");
         int fimTab = scan.nextInt();
-
-        for(int i = initTab; initTab <= fimTab; initTab++){
-            System.out.println(numTab+ " x " + initTab + " = " + (numTab*initTab));
+        while (fimTab < initTab){
+            System.out.println("Entre novamente as informações: ");
+            System.out.println("Começar por: ");
+            initTab = scan.nextInt();
+        System.out.println("Terminar em: ");
+            fimTab = scan.nextInt();
+        }
+        for(int i = numTab ; initTab <= fimTab; initTab++){
+            System.out.println(i + " x " + initTab + " = " + (numTab*initTab));
         }
     }
 }
