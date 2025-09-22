@@ -21,6 +21,7 @@ public class Exerc24 {
         }else{
             System.out.println("Não é Palindromo!!");
         }
+        
     }
 
     
